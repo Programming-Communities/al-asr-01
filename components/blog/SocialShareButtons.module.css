@@ -1,0 +1,109 @@
+/* Social Buttons Container */
+.socialButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+}
+
+/* Base Social Button */
+.socialButton {
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.socialButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.socialButton:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+/* WhatsApp Button */
+.whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.whatsapp:hover:not(:disabled) {
+  background: #128c7e;
+}
+
+/* Facebook Button */
+.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.facebook:hover:not(:disabled) {
+  background: #166fe5;
+}
+
+/* Twitter Button */
+.twitter {
+  background: #1da1f2;
+  color: white;
+}
+
+.twitter:hover:not(:disabled) {
+  background: #1a91da;
+}
+
+/* Copy Button */
+.copy {
+  background: #6b7280;
+  color: white;
+}
+
+.copy:hover:not(:disabled) {
+  background: #4b5563;
+}
+
+/* Icons */
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Spinner for loading state */
+.spinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .socialButtons {
+    gap: 0.5rem;
+  }
+  
+  .socialButton {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  
+  .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}

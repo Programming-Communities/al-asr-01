@@ -1,0 +1,360 @@
+/* Common Skeleton Styles */
+.homePageSkeleton,
+.postPageSkeleton,
+.blogItemSkeleton {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Home Page Skeleton */
+.headerSkeleton {
+  background: linear-gradient(to bottom, white, #fef2f2);
+  padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .headerSkeleton {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headerSkeleton {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoSkeleton {
+  width: 130px;
+  height: 60px;
+  background: #d1d5db;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .logoSkeleton {
+    width: 160px;
+  }
+}
+
+.emptySpace {
+  width: 40px;
+  height: 40px;
+}
+
+.heroSkeleton {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.heroTitleSkeleton {
+  height: 3rem;
+  background: #d1d5db;
+  border-radius: 0.5rem;
+  margin: 0 auto 1rem;
+  max-width: 400px;
+}
+
+.heroTextSkeleton {
+  height: 1.25rem;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  margin: 1.5rem auto 0.5rem;
+  max-width: 500px;
+}
+
+.heroTextSkeletonShort {
+  height: 1.25rem;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 75%;
+}
+
+.heroBadgeSkeleton {
+  height: 3rem;
+  background: #d1d5db;
+  border-radius: 0.5rem;
+  margin: 2rem auto 0;
+  max-width: 300px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Category Filters Skeleton */
+.categoryFiltersSkeleton {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 2.5rem 0;
+  flex-wrap: wrap;
+}
+
+.categorySkeleton {
+  width: 80px;
+  height: 36px;
+  background: #d1d5db;
+  border-radius: 0.375rem;
+}
+
+/* Posts Grid Skeleton */
+.postsGridSkeleton {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Blog Item Skeleton */
+.blogItemSkeleton {
+  max-width: 330px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
+.blogImageSkeleton {
+  height: 192px;
+  width: 100%;
+  background: #d1d5db;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.blogCategorySkeleton {
+  padding: 1.25rem 1.25rem 0;
+}
+
+.categoryBadgeSkeleton {
+  width: 80px;
+  height: 24px;
+  background: #d1d5db;
+  border-radius: 9999px;
+}
+
+.blogContentSkeleton {
+  padding: 1.25rem;
+}
+
+.blogTitleSkeleton {
+  height: 1.5rem;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.blogTextSkeleton {
+  height: 1rem;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.blogTextSkeletonShort {
+  height: 1rem;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  width: 75%;
+}
+
+.blogMetaSkeleton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.blogDateSkeleton {
+  width: 64px;
+  height: 12px;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.blogReadMoreSkeleton {
+  width: 80px;
+  height: 16px;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+}
+
+/* Post Page Skeleton */
+.postPageSkeleton {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding: 2rem 0;
+}
+
+.postContainerSkeleton {
+  max-width: 4xl;
+  margin: 0 auto;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.featuredImageSkeleton {
+  height: 24rem;
+  width: 100%;
+  background: #d1d5db;
+}
+
+.postContentSkeleton {
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .postContentSkeleton {
+    padding: 2rem;
+  }
+}
+
+.categoriesSkeleton {
+  margin-bottom: 1rem;
+}
+
+.categorySkeletonSmall {
+  width: 96px;
+  height: 24px;
+  background: #d1d5db;
+  border-radius: 9999px;
+}
+
+.postTitleSkeleton {
+  height: 2rem;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  width: 75%;
+}
+
+.postTitleSkeletonShort {
+  height: 2rem;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  width: 50%;
+}
+
+.metaSkeleton {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.metaItemSkeleton {
+  width: 128px;
+  height: 16px;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.contentSkeleton {
+  space-y: 1rem;
+}
+
+.textLineSkeleton {
+  height: 1rem;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.textLineSkeletonShort {
+  height: 1rem;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  width: 75%;
+}
+
+.textLineSkeletonMedium {
+  height: 1rem;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  width: 83.333333%;
+}
+
+.backButtonSkeleton {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.backButton {
+  width: 128px;
+  height: 24px;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .blogItemSkeleton,
+  .postContainerSkeleton {
+    background: #1f2937;
+    border-color: #374151;
+  }
+  
+  .logoSkeleton,
+  .heroTitleSkeleton,
+  .heroTextSkeleton,
+  .heroTextSkeletonShort,
+  .heroBadgeSkeleton,
+  .categorySkeleton,
+  .blogImageSkeleton,
+  .categoryBadgeSkeleton,
+  .blogTitleSkeleton,
+  .blogTextSkeleton,
+  .blogTextSkeletonShort,
+  .blogDateSkeleton,
+  .blogReadMoreSkeleton,
+  .featuredImageSkeleton,
+  .categorySkeletonSmall,
+  .postTitleSkeleton,
+  .postTitleSkeletonShort,
+  .metaItemSkeleton,
+  .textLineSkeleton,
+  .textLineSkeletonShort,
+  .textLineSkeletonMedium,
+  .backButton {
+    background: #374151;
+  }
+  
+  .headerSkeleton {
+    background: linear-gradient(to bottom, #1f2937, #374151);
+  }
+  
+  .postPageSkeleton {
+    background: #111827;
+  }
+}

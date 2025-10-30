@@ -1,0 +1,177 @@
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Quick Stats Card */
+.quickStats {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.darkQuickStats {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.quickStats:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.darkTitle {
+  color: white;
+}
+
+.statsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.darkStatItem {
+  background: #374151;
+}
+
+.statItem:hover {
+  background: #fef2f2;
+  transform: translateX(4px);
+}
+
+.darkStatItem:hover {
+  background: #7f1d1d;
+}
+
+.statContent {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.statIcon {
+  font-size: 1.25rem;
+}
+
+.statName {
+  font-weight: 600;
+  color: #374151;
+}
+
+.darkStatName {
+  color: #d1d5db;
+}
+
+.statCount {
+  background: #fecaca;
+  color: #dc2626;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.darkStatCount {
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+/* Events Card */
+.events {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.darkEvents {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.events:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.eventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.eventItem {
+  padding: 0.75rem;
+  border-left: 4px solid #dc2626;
+  background: #f8fafc;
+  border-radius: 0 0.5rem 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.darkEventItem {
+  background: #374151;
+}
+
+.eventItem:hover {
+  background: #fef2f2;
+  transform: translateX(4px);
+}
+
+.darkEventItem:hover {
+  background: #7f1d1d;
+}
+
+.eventName {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.darkEventName {
+  color: white;
+}
+
+.eventTime {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.darkEventTime {
+  color: #9ca3af;
+}
+
+.eventType {
+  font-size: 0.75rem;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.darkEventType {
+  color: #fca5a5;
+}
